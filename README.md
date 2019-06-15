@@ -18,7 +18,6 @@ This project list three categories of projects:
     * Servomotor
     * Push button
     * Water sensor
-    * 
   
   Also the Firebase diagrams will be shown in order not to show the real database data.
   
