@@ -1,0 +1,151 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+.infoContainer {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-areas:
+    "avatar1 titulo"
+    "avatar2 descripcion";
+  grid-column-gap: 50px;
+}
+.avatar {
+  width: 300px;
+  border-radius: 150px;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.5);
+  grid-row: avatar1 / avatar2;
+}
+.title {
+  font-size: 60px;
+}
+.description {
+  font-size: 30px;
+}
+.controlCenterContainer {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  grid-row-gap: 30px;
+}
+
+.card {
+  background-color: white;
+  width: 80%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+  padding: 5px;
+}
+.cardTitle {
+  text-align: center;
+  font-weight: 400;
+}
+/* Carta LED */
+#cardLED {
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  grid-template-areas:
+    "titulo1 titulo2"
+    "encendido apagado";
+}
+.cardLEDTitle {
+  grid-column: titulo1 / titulo2;
+}
+.material-icons {
+  font-size: 40px;
+}
+.botonEncender {
+  border-bottom-left-radius: 20px;
+  background-color: #f4d450;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+}
+.botonApagar {
+  border-bottom-right-radius: 20px;
+  background-color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+/* Carta Servomotor */
+#cardServo {
+  display: grid;
+  grid-template-rows: 5fr 1fr 1fr;
+}
+.anguloServo {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: 20px;
+}
+.valorAnguloServo {
+  text-align: center;
+  font-size: 50px;
+  color: #ffb100;
+}
+/* Carta Agua */
+#cardWater {
+  display: grid;
+  grid-template-rows: 1fr 10fr 1fr;
+  grid-template-columns: 100%;
+}
+.waterIndicator {
+  width: 100%;
+  height: 100%;
+  background-color: #93b8ff;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-bottom: 0px;
+}
+/* Carta bot'on */
+#cardBoton {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.botonImage {
+  width: 100%;
+  height: 70%;
+  background-image: url("images/boton1.png");
+  background-size: cover;
+  background-position: 50% 50%;
+  border-radius: 20px;
+}
+
+/* Responsive */
+@media screen and (max-width: 1300px) {
+  .controlCenterContainer {
+    grid-template-columns: auto;
+    width: 95%;
+  }
+  .infoContainer {
+    grid-template-areas:
+      "avatar"
+      "titulo"
+      "descripcion";
+  }
+  .avatar {
+    grid-row: avatar;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .title,
+  .description {
+    text-align: center;
+  }
+  #cardBoton {
+    grid-template-rows: 1fr 3fr;
+  }
+  .botonImage {
+    height: 100%;
+  }
+}
