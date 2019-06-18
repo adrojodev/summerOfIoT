@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="juegos.js"></script>
+  </head>
+  <body>
+    <h1 id="titulo-principal">Jueguitos</h1>
+    <hr />
+    <div id="adivina-el-numero">
+      <p class="instrucciones">
+        Adivina el numero entre el 0 y el 10.
+      </p>
+      <input placeholder="Numero..." id="input-numero" />
+      <button id="adivina-el-numero-boton" onclick="adivinaElNumero()">
+        Adivinar
+      </button>
+      <p id="marcador"></p>
+    </div>
+    <hr />
+    <div id="es-primo">
+      <input placeholder="Numero..." id="input-numero-primo" />
+      <button id="primo-inicio" onclick="siEsNumeroPrimo()">Contar</button>
+      <p id="resultado-primo"></p>
+    </div>
+    <hr />
+    <div id="Mayus-texto">
+      <p class="instrucciones">Te haremos mayusculas tu nombre.</p>
+      <input placeholder="Nombre..." id="usuario-nombre" />
+      <button id="revolver-boton" onclick="aMayus()">¡Revolver!</button>
+      <p id="nombre-mayus"></p>
+    </div>
+  </body>
+</html>
