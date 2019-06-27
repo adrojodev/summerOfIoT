@@ -120,32 +120,3 @@ body {
   background-position: 50% 50%;
   border-radius: 20px;
 }
-
-/* Responsive */
-@media screen and (max-width: 1300px) {
-  .controlCenterContainer {
-    grid-template-columns: auto;
-    width: 95%;
-  }
-  .infoContainer {
-    grid-template-areas:
-      "avatar"
-      "titulo"
-      "descripcion";
-  }
-  .avatar {
-    grid-row: avatar;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .title,
-  .description {
-    text-align: center;
-  }
-  #cardBoton {
-    grid-template-rows: 1fr 3fr;
-  }
-  .botonImage {
-    height: 100%;
-  }
-}
